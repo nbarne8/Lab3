@@ -4,6 +4,10 @@
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 
+	var german = L.tileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
 	var Lightning = L.tileLayer.wms("http://nowcoast.noaa.gov/arcgis/services/nowcoast/sat_meteo_emulated_imagery_lightningstrikedensity_goes_time/MapServer/WMSServer", {
     layers: '1',
     format: 'image/png',
@@ -27,7 +31,8 @@
 	}).addTo(map);
 
 	var baseLayers = {
-	    "Streets": streets
+	    "Streets": streets,
+			"German": german
 	};
 
 	var overlays = {
