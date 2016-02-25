@@ -1,0 +1,15 @@
+#map {
+	width: 80%;
+	height: 650px;
+	margin: 0 auto;
+	padding:0;
+}
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+  <div id="map"></div>
+}
